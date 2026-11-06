@@ -1,8 +1,8 @@
-package com.example.p8.model
+package com.example.myarsitekturmvvm.model
 
 object DataJK {
-    val jenisK= listOf(
+    val JenisK= listOf(
         R.string.laki,
-        R.string.wanita,
+        R.string.wanita
     )
 }
