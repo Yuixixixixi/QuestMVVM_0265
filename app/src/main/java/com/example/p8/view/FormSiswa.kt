@@ -78,13 +78,8 @@ fun FormSiswa(
                 }
             )
             Spacer(modifier = Modifier.height(20.dp))
-            Button(
-                modifier = Modifier.fillMaxWidth(1f),
-                enabled = txtAlamat.isNotEmpty(),
-                onClick = {onSubmitButtonClicked(listData)}
-            ) {
-                Text(stringResource(R.string.submit))
-            }
+
+            // Tombol Submit (Cukup 1 saja dengan validasi lengkap)
             Button(
                 modifier = Modifier.fillMaxWidth(1f),
                 enabled = txtNama.isNotEmpty() && txtAlamat.isNotEmpty(),
@@ -94,4 +89,13 @@ fun FormSiswa(
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun FormSiswaPreview() {
+    FormSiswa(
+        pilihanJK = listOf("Laki-laki", "Perempuan"),
+        onSubmitButtonClicked = {}
+    )
 }
