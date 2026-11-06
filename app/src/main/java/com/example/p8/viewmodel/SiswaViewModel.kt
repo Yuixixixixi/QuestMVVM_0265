@@ -9,4 +9,7 @@ class SiswaViewModel : ViewModel() {
             statusSaatIni.copy(nama=ls[0], gender=ls[1], alamat=ls[2])
         }
     }
+    fun resetSiswa() {
+        _statusUI.value = Siswa()
+    }
 }
